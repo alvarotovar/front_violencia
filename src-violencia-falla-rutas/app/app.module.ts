@@ -8,14 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage} from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
-
+import { RouterModule, Routes }  from '@angular/router';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    RouterModule
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,8 @@ import { RegisterPage } from '../pages/register/register';
     MyApp,
     HomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    RouterModule
   ],
   providers: [
     StatusBar,
