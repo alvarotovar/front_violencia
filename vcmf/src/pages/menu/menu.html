@@ -1,0 +1,35 @@
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title padding-right>
+          Ionic Blank Menu
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    
+    <ion-content padding>
+      <!-- The world is your oyster.
+      <p>
+        If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+      </p> -->
+      <ion-content>
+          <ion-list>
+            <button ion-item *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose>
+              <ion-icon item-lef name="{{page.icon}}"></ion-icon>
+              {{page.titulo}}
+            </button>
+            <!-- <button ion-item (click)="openPage(friendsPage)">
+              Friends
+            </button>
+            <button ion-item (click)="openPage(eventsPage)">
+              Events
+            </button>
+            <button ion-item (click)="closeMenu()">
+              Close Menu
+            </button> -->
+          </ion-list>
+        </ion-content>
+    </ion-content>
+    </ion-menu>
+    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>

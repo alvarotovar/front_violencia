@@ -1,30 +1,58 @@
-<!--
-  Generated template for the RegisterPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>register</ion-title>
-  </ion-navbar>
-
+    <ion-title>Register</ion-title>
+ </ion-navbar>
 </ion-header>
 
-
-<ion-content padding>
+<ion-content padding center text-center>
+    <ion-title>Datos de registro</ion-title>
 <ion-list>
   <ion-item>
-    <ion-input placeholder= "Username"[(ngModel)]="username"></ion-input>
+    <ion-label floating>Usuario(Correo)</ion-label>
+    <ion-input [(ngModel)]="username"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input placeholder= "Password"[(ngModel)]="password" type="password"></ion-input>
+      <ion-label floating>Confirmar Usuario(Correo)</ion-label>
+      <ion-input [(ngModel)]="confirmusername"></ion-input>
+    </ion-item>
+  <ion-item>
+      <ion-label floating>Nombre</ion-label>
+      <ion-input [(ngModel)]="name"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input placeholder= "Repetir password" [(ngModel)]="repassword" type="password"></ion-input>
+      <ion-label floating>Dirección</ion-label>
+      <ion-input [(ngModel)]="direction"></ion-input>
   </ion-item>
+  <ion-item>
+      <ion-label floating>Localidad</ion-label>
+      <ion-input [(ngModel)]="localidad"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Celular</ion-label>
+      <ion-input [(ngModel)]="Phone" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Repetir Password</ion-label>
+    <ion-input [(ngModel)]="repassword" type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Fecha Nacimiento</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+        <ion-label>Genero</ion-label>
+        <ion-select [(ngModel)]="genero">
+          <ion-option value="f">Mujer</ion-option>
+          <ion-option value="m">Hombre</ion-option>
+        </ion-select>
+      </ion-item>
 </ion-list>
-
-<button ion-button full (click)="register()">Registro</button>
+<br>
+<br>
+<button ion-button round (click)="register()">Registro</button>
+<button ion-button round end-left (click)="close()">Regresar</button>
 </ion-content>
