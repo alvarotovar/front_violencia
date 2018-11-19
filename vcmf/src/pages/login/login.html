@@ -1,14 +1,19 @@
-<ion-content padding center text-center>
-<ion-title>Ingreso</ion-title>
-<ion-list>
+<ion-content class="main" padding center text-center>
+<ion-title>
+  <h1>  <span text-color="my-custom-color">Ingreso </span> </h1>
+</ion-title>
+<div no-padding >
+<ion-list padding class="caja"  padding center text-center>
   <ion-item>
-    <ion-input placeholder="Usuario"[(ngModel)]="username"> </ion-input>
+    <ion-input  placeholder="Usuario"[(ngModel)]="username"> </ion-input>
   </ion-item>
   <ion-item>
     <ion-input placeholder="Password" type="password" [(ngModel)]="password"> </ion-input>
   </ion-item>
 </ion-list>
+</div>
 <button ion-button round (click)="login()">Ingreso</button>
 <button ion-button round color="light" (click)="goRegister()">Registro</button>
 <button ion-button round color="light" (click)="goHome()">Home</button>
+
 </ion-content>

@@ -11,5 +11,5 @@ import { HomePage } from './home';
   ],
 })
 export class RegisterPageModule {
-    rootHome :any = HomePage;
+  //  rootHome :any = HomePage;
 }

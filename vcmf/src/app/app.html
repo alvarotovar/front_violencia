@@ -1,8 +1,39 @@
 <ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
 <ion-header>
 
     <!-- <ion-navbar>
       <ion-title>APP</ion-title>
     </ion-navbar> -->
   
+    
+      <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>NomásApp</ion-title>
+      </ion-navbar>
+      
   </ion-header>
+  <ion-content class="main" padding>
+    <ion-content class="caja" padding>
+      <ion-list >
+        <button class="caja2" padding ion-item *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose>
+          <ion-icon item-lef name="{{page.icon}}"></ion-icon>
+          {{page.titulo}}
+        </button>
+        <!-- <button ion-item (click)="openPage(friendsPage)">
+          Friends
+        </button>
+        <button ion-item (click)="openPage(eventsPage)">
+          Events
+        </button>
+        <button ion-item (click)="closeMenu()">
+          Close Menu
+        </button> -->
+      </ion-list>
+    </ion-content>
+   
+  </ion-content>
+</ion-menu>
+  <ion-nav id="nav" #content [root]="rootPage"></ion-nav>

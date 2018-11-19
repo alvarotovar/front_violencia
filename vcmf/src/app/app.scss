@@ -14,3 +14,53 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.caja { 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;}
+    .main{
+        background-image: url('/assets/imgs/images4.jpg');
+      //  background-color: blueviolet ;
+    }
+    .caja2 { 
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        color: #ffffff; 
+        font-size: 18px; 
+        font-weight: 400; 
+        text-align: center; 
+        background: #d173d4; 
+        margin: 0 0 25px; 
+        overflow: hidden; 
+        padding: 20px; 
+        border-radius: 35px 0px 35px 0px; 
+        -moz-border-radius: 35px 0px 35px 0px; 
+        -webkit-border-radius: 35px 0px 35px 0px; 
+        border: 2px solid #35036e;}
+
+        .my-nav {
+            list-style-type: disc;
+          }
+
+          #list {
+            width: 170px;
+            margin: 30px auto;
+            font-size: 20px;
+          }
+          #list ul {
+            margin-top: 30px;
+          }
+          #list ul li {
+            text-align: left;
+            list-style: disc;
+            margin: 10px 0px;
+          }

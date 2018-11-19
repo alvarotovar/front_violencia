@@ -4,7 +4,7 @@ import { RegisterPage } from '../register/register';
 //import { AuthService} from '../../services/auth.service';
 import { TabsPage } from '../tabs/tabs';
 import { HomePage } from '../home/home';
-import { MenuPage } from '../menu/menu';
+
 
 /**
  * Generated class for the LoginPage page.
@@ -52,7 +52,7 @@ isLogged: boolean;
      this.navCtrl.push(RegisterPage);
    }
    goHome(){
-    this.navCtrl.setRoot(MenuPage);
+    this.navCtrl.setRoot(HomePage);
   }
 
 

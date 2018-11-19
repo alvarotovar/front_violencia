@@ -1,5 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
-import { NavController, MenuController } from 'ionic-angular';
+import { NavController, MenuController, Nav } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +8,8 @@ import { NavController, MenuController } from 'ionic-angular';
 export class HomePage {
 
  // @ViewChild('content'); 
-
+ public rootPage: any;
+ @ViewChild('content') nav: Nav;
   constructor(public navCtrl: NavController, menu: MenuController) {
 
    

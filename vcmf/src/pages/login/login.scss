@@ -1,6 +1,14 @@
 page-login {
+    .main{ 
+    background-color: rgb(43, 3, 80) ;}
+
+    [text-color="my-custom-color"] {
+        color: white;
+    }
    ion-title * {
        margin-top: 20vh;
        margin-bottom: 5vh;
+       
    }
+   
 }

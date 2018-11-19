@@ -4,11 +4,12 @@
  </ion-navbar>
 </ion-header>
 
-<ion-content padding center text-center>
+<ion-content class="caja" padding center text-center>
     <ion-title>Datos de registro</ion-title>
 <ion-list>
-  <ion-item>
-    <ion-label floating>Usuario(Correo)</ion-label>
+  <ion-item >
+    <ion-label class="input-group" floating>Usuario(Correo)</ion-label>
+    <span class="input-group-addon">@</span>
     <ion-input [(ngModel)]="username"></ion-input>
   </ion-item>
   <ion-item>
